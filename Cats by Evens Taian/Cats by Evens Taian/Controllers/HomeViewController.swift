@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Lottie
 
 class HomeViewController: UIViewController {
 
@@ -16,6 +17,8 @@ class HomeViewController: UIViewController {
         setupConstraints()
     }
     
+    fileprivate let animationView = AnimationView(name: "cat")
+    
     lazy var contentView : UIView = {
         let cView = UIView()
         cView.translatesAutoresizingMaskIntoConstraints = false
@@ -23,8 +26,15 @@ class HomeViewController: UIViewController {
         return cView
     }()
     
+    lazy var loaderView : CatLoader = {
+        let lView = CatLoader(text: "Estamos procurando gatinhos pra você :)")
+        lView.translatesAutoresizingMaskIntoConstraints = false
+        return lView
+    }()
+    
     func setupViews(){
         view.addSubview(contentView)
+        contentView.addSubview(loaderView)
     }
     
     func setupConstraints(){
@@ -33,6 +43,12 @@ class HomeViewController: UIViewController {
             contentView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             contentView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             contentView.leadingAnchor.constraint(equalTo: view.leadingAnchor)
+        ])
+        
+        NSLayoutConstraint.activate([
+            loaderView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            loaderView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            loaderView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
         ])
     }
 }

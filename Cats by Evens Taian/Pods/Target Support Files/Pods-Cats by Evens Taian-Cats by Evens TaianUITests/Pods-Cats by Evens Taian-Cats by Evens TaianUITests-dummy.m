@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Cats_by_Evens_Taian_Cats_by_Evens_TaianUITests : NSObject
+@end
+@implementation PodsDummy_Pods_Cats_by_Evens_Taian_Cats_by_Evens_TaianUITests
+@end

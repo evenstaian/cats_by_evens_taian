@@ -1,0 +1,6 @@
+framework module Pods_Cats_by_Evens_Taian_Cats_by_Evens_TaianUITests {
+  umbrella header "Pods-Cats by Evens Taian-Cats by Evens TaianUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

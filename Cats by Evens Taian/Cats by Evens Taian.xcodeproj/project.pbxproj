@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,10 @@
 		1D32A7F7246882D40077BBA2 /* Cats_by_Evens_TaianUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D32A7F6246882D40077BBA2 /* Cats_by_Evens_TaianUITests.swift */; };
 		1D32A80E246892A30077BBA2 /* cat.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D32A80D246892A30077BBA2 /* cat.json */; };
 		1D32A810246894A10077BBA2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D32A80F246894A10077BBA2 /* HomeViewController.swift */; };
+		1D32A8132468B7950077BBA2 /* CatLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D32A8122468B7950077BBA2 /* CatLoader.swift */; };
+		317BDC905C69A34637D2C294 /* Pods_Cats_by_Evens_TaianTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D07A79F5E70D3BB5FBAD79E /* Pods_Cats_by_Evens_TaianTests.framework */; };
+		BF331915D20E86ED332D223B /* Pods_Cats_by_Evens_Taian_Cats_by_Evens_TaianUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1B9D753300E85FE6AC5F285 /* Pods_Cats_by_Evens_Taian_Cats_by_Evens_TaianUITests.framework */; };
+		BFB2FCFCBE084A6B98E7ED51 /* Pods_Cats_by_Evens_Taian.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC31F5C84E58C5181B3F381 /* Pods_Cats_by_Evens_Taian.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,16 @@
 		1D32A7F8246882D40077BBA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D32A80D246892A30077BBA2 /* cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cat.json; sourceTree = "<group>"; };
 		1D32A80F246894A10077BBA2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1D32A8122468B7950077BBA2 /* CatLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatLoader.swift; sourceTree = "<group>"; };
+		5897CDBE7142FDDE428ED38E /* Pods-Cats by Evens Taian-Cats by Evens TaianUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cats by Evens Taian-Cats by Evens TaianUITests.release.xcconfig"; path = "Target Support Files/Pods-Cats by Evens Taian-Cats by Evens TaianUITests/Pods-Cats by Evens Taian-Cats by Evens TaianUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5D07A79F5E70D3BB5FBAD79E /* Pods_Cats_by_Evens_TaianTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cats_by_Evens_TaianTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AC31F5C84E58C5181B3F381 /* Pods_Cats_by_Evens_Taian.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cats_by_Evens_Taian.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A22E2103754C8D97DA9AA904 /* Pods-Cats by Evens Taian.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cats by Evens Taian.release.xcconfig"; path = "Target Support Files/Pods-Cats by Evens Taian/Pods-Cats by Evens Taian.release.xcconfig"; sourceTree = "<group>"; };
+		ABEDA3534B012F225F8342B6 /* Pods-Cats by Evens Taian.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cats by Evens Taian.debug.xcconfig"; path = "Target Support Files/Pods-Cats by Evens Taian/Pods-Cats by Evens Taian.debug.xcconfig"; sourceTree = "<group>"; };
+		D1B9D753300E85FE6AC5F285 /* Pods_Cats_by_Evens_Taian_Cats_by_Evens_TaianUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cats_by_Evens_Taian_Cats_by_Evens_TaianUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87939788E077B35153C65DE /* Pods-Cats by Evens TaianTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cats by Evens TaianTests.release.xcconfig"; path = "Target Support Files/Pods-Cats by Evens TaianTests/Pods-Cats by Evens TaianTests.release.xcconfig"; sourceTree = "<group>"; };
+		EC69BDB5ECE661FB26C7FF22 /* Pods-Cats by Evens TaianTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cats by Evens TaianTests.debug.xcconfig"; path = "Target Support Files/Pods-Cats by Evens TaianTests/Pods-Cats by Evens TaianTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED7DECF3B0D0141074B815C6 /* Pods-Cats by Evens Taian-Cats by Evens TaianUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cats by Evens Taian-Cats by Evens TaianUITests.debug.xcconfig"; path = "Target Support Files/Pods-Cats by Evens Taian-Cats by Evens TaianUITests/Pods-Cats by Evens Taian-Cats by Evens TaianUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB2FCFCBE084A6B98E7ED51 /* Pods_Cats_by_Evens_Taian.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				317BDC905C69A34637D2C294 /* Pods_Cats_by_Evens_TaianTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF331915D20E86ED332D223B /* Pods_Cats_by_Evens_Taian_Cats_by_Evens_TaianUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +98,8 @@
 				1D32A7EA246882D30077BBA2 /* Cats by Evens TaianTests */,
 				1D32A7F5246882D40077BBA2 /* Cats by Evens TaianUITests */,
 				1D32A7D2246882CE0077BBA2 /* Products */,
+				5CB29D370E7435F0D70DA151 /* Pods */,
+				8DABC692B9916954B6752AD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +164,7 @@
 		1D32A8062468903F0077BBA2 /* UIResources */ = {
 			isa = PBXGroup;
 			children = (
+				1D32A8112468B75A0077BBA2 /* Components */,
 				1D32A807246890980077BBA2 /* Storyboards */,
 			);
 			path = UIResources;
@@ -197,6 +217,37 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
+		1D32A8112468B75A0077BBA2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1D32A8122468B7950077BBA2 /* CatLoader.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5CB29D370E7435F0D70DA151 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABEDA3534B012F225F8342B6 /* Pods-Cats by Evens Taian.debug.xcconfig */,
+				A22E2103754C8D97DA9AA904 /* Pods-Cats by Evens Taian.release.xcconfig */,
+				ED7DECF3B0D0141074B815C6 /* Pods-Cats by Evens Taian-Cats by Evens TaianUITests.debug.xcconfig */,
+				5897CDBE7142FDDE428ED38E /* Pods-Cats by Evens Taian-Cats by Evens TaianUITests.release.xcconfig */,
+				EC69BDB5ECE661FB26C7FF22 /* Pods-Cats by Evens TaianTests.debug.xcconfig */,
+				D87939788E077B35153C65DE /* Pods-Cats by Evens TaianTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8DABC692B9916954B6752AD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AC31F5C84E58C5181B3F381 /* Pods_Cats_by_Evens_Taian.framework */,
+				D1B9D753300E85FE6AC5F285 /* Pods_Cats_by_Evens_Taian_Cats_by_Evens_TaianUITests.framework */,
+				5D07A79F5E70D3BB5FBAD79E /* Pods_Cats_by_Evens_TaianTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -204,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D32A7FB246882D40077BBA2 /* Build configuration list for PBXNativeTarget "Cats by Evens Taian" */;
 			buildPhases = (
+				635807E9E4206A177EC7C36F /* [CP] Check Pods Manifest.lock */,
 				1D32A7CD246882CE0077BBA2 /* Sources */,
 				1D32A7CE246882CE0077BBA2 /* Frameworks */,
 				1D32A7CF246882CE0077BBA2 /* Resources */,
+				125FB5F3AF47A6AAE5FFFAA6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -221,6 +274,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D32A7FE246882D40077BBA2 /* Build configuration list for PBXNativeTarget "Cats by Evens TaianTests" */;
 			buildPhases = (
+				4696EE6ACD154F142F81AEB6 /* [CP] Check Pods Manifest.lock */,
 				1D32A7E3246882D30077BBA2 /* Sources */,
 				1D32A7E4246882D30077BBA2 /* Frameworks */,
 				1D32A7E5246882D30077BBA2 /* Resources */,
@@ -239,9 +293,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D32A801246882D40077BBA2 /* Build configuration list for PBXNativeTarget "Cats by Evens TaianUITests" */;
 			buildPhases = (
+				79EDD03AF60EF199C51A3858 /* [CP] Check Pods Manifest.lock */,
 				1D32A7EE246882D30077BBA2 /* Sources */,
 				1D32A7EF246882D30077BBA2 /* Frameworks */,
 				1D32A7F0246882D30077BBA2 /* Resources */,
+				BCFBA82AF6B1E491A3A05040 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,12 +379,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		125FB5F3AF47A6AAE5FFFAA6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cats by Evens Taian/Pods-Cats by Evens Taian-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cats by Evens Taian/Pods-Cats by Evens Taian-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cats by Evens Taian/Pods-Cats by Evens Taian-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4696EE6ACD154F142F81AEB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cats by Evens TaianTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		635807E9E4206A177EC7C36F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cats by Evens Taian-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79EDD03AF60EF199C51A3858 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cats by Evens Taian-Cats by Evens TaianUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCFBA82AF6B1E491A3A05040 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cats by Evens Taian-Cats by Evens TaianUITests/Pods-Cats by Evens Taian-Cats by Evens TaianUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cats by Evens Taian-Cats by Evens TaianUITests/Pods-Cats by Evens Taian-Cats by Evens TaianUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cats by Evens Taian-Cats by Evens TaianUITests/Pods-Cats by Evens Taian-Cats by Evens TaianUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1D32A7CD246882CE0077BBA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1D32A7D5246882CE0077BBA2 /* AppDelegate.swift in Sources */,
+				1D32A8132468B7950077BBA2 /* CatLoader.swift in Sources */,
 				1D32A810246894A10077BBA2 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,6 +652,7 @@
 		};
 		1D32A7FC246882D40077BBA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABEDA3534B012F225F8342B6 /* Pods-Cats by Evens Taian.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -513,6 +674,7 @@
 		};
 		1D32A7FD246882D40077BBA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A22E2103754C8D97DA9AA904 /* Pods-Cats by Evens Taian.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -534,6 +696,7 @@
 		};
 		1D32A7FF246882D40077BBA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC69BDB5ECE661FB26C7FF22 /* Pods-Cats by Evens TaianTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -556,6 +719,7 @@
 		};
 		1D32A800246882D40077BBA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D87939788E077B35153C65DE /* Pods-Cats by Evens TaianTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -578,6 +742,7 @@
 		};
 		1D32A802246882D40077BBA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED7DECF3B0D0141074B815C6 /* Pods-Cats by Evens Taian-Cats by Evens TaianUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -598,6 +763,7 @@
 		};
 		1D32A803246882D40077BBA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5897CDBE7142FDDE428ED38E /* Pods-Cats by Evens Taian-Cats by Evens TaianUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
