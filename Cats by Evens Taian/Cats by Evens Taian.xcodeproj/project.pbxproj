@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D32A7D5246882CE0077BBA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D32A7D4246882CE0077BBA2 /* AppDelegate.swift */; };
+		1D32A7D7246882CE0077BBA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D32A7D6246882CE0077BBA2 /* SceneDelegate.swift */; };
+		1D32A7D9246882CE0077BBA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D32A7D8246882CE0077BBA2 /* ViewController.swift */; };
+		1D32A7DC246882CE0077BBA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D32A7DA246882CE0077BBA2 /* Main.storyboard */; };
+		1D32A7DE246882D30077BBA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D32A7DD246882D30077BBA2 /* Assets.xcassets */; };
+		1D32A7E1246882D30077BBA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D32A7DF246882D30077BBA2 /* LaunchScreen.storyboard */; };
+		1D32A7EC246882D30077BBA2 /* Cats_by_Evens_TaianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D32A7EB246882D30077BBA2 /* Cats_by_Evens_TaianTests.swift */; };
+		1D32A7F7246882D40077BBA2 /* Cats_by_Evens_TaianUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D32A7F6246882D40077BBA2 /* Cats_by_Evens_TaianUITests.swift */; };
+		1D32A80E246892A30077BBA2 /* cat.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D32A80D246892A30077BBA2 /* cat.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1D32A7E8246882D30077BBA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D32A7C9246882CE0077BBA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D32A7D0246882CE0077BBA2;
+			remoteInfo = "Cats by Evens Taian";
+		};
+		1D32A7F3246882D30077BBA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D32A7C9246882CE0077BBA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D32A7D0246882CE0077BBA2;
+			remoteInfo = "Cats by Evens Taian";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D32A7D1246882CE0077BBA2 /* Cats by Evens Taian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cats by Evens Taian.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D32A7D4246882CE0077BBA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D32A7D6246882CE0077BBA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1D32A7D8246882CE0077BBA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1D32A7DB246882CE0077BBA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D32A7DD246882D30077BBA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D32A7E0246882D30077BBA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D32A7E2246882D30077BBA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D32A7E7246882D30077BBA2 /* Cats by Evens TaianTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cats by Evens TaianTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D32A7EB246882D30077BBA2 /* Cats_by_Evens_TaianTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cats_by_Evens_TaianTests.swift; sourceTree = "<group>"; };
+		1D32A7ED246882D30077BBA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D32A7F2246882D30077BBA2 /* Cats by Evens TaianUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cats by Evens TaianUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D32A7F6246882D40077BBA2 /* Cats_by_Evens_TaianUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cats_by_Evens_TaianUITests.swift; sourceTree = "<group>"; };
+		1D32A7F8246882D40077BBA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D32A80D246892A30077BBA2 /* cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cat.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D32A7CE246882CE0077BBA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D32A7E4246882D30077BBA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D32A7EF246882D30077BBA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D32A7C8246882CE0077BBA2 = {
+			isa = PBXGroup;
+			children = (
+				1D32A7D3246882CE0077BBA2 /* Cats by Evens Taian */,
+				1D32A7EA246882D30077BBA2 /* Cats by Evens TaianTests */,
+				1D32A7F5246882D40077BBA2 /* Cats by Evens TaianUITests */,
+				1D32A7D2246882CE0077BBA2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1D32A7D2246882CE0077BBA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D32A7D1246882CE0077BBA2 /* Cats by Evens Taian.app */,
+				1D32A7E7246882D30077BBA2 /* Cats by Evens TaianTests.xctest */,
+				1D32A7F2246882D30077BBA2 /* Cats by Evens TaianUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D32A7D3246882CE0077BBA2 /* Cats by Evens Taian */ = {
+			isa = PBXGroup;
+			children = (
+				1D32A804246890110077BBA2 /* Application */,
+				1D32A8052468902C0077BBA2 /* Networking */,
+				1D32A80A246891920077BBA2 /* Controllers */,
+				1D32A809246890B80077BBA2 /* ViewModels */,
+				1D32A808246890A80077BBA2 /* Models */,
+				1D32A8062468903F0077BBA2 /* UIResources */,
+				1D32A80B246891BA0077BBA2 /* Resources */,
+				1D32A7E2246882D30077BBA2 /* Info.plist */,
+			);
+			path = "Cats by Evens Taian";
+			sourceTree = "<group>";
+		};
+		1D32A7EA246882D30077BBA2 /* Cats by Evens TaianTests */ = {
+			isa = PBXGroup;
+			children = (
+				1D32A7EB246882D30077BBA2 /* Cats_by_Evens_TaianTests.swift */,
+				1D32A7ED246882D30077BBA2 /* Info.plist */,
+			);
+			path = "Cats by Evens TaianTests";
+			sourceTree = "<group>";
+		};
+		1D32A7F5246882D40077BBA2 /* Cats by Evens TaianUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1D32A7F6246882D40077BBA2 /* Cats_by_Evens_TaianUITests.swift */,
+				1D32A7F8246882D40077BBA2 /* Info.plist */,
+			);
+			path = "Cats by Evens TaianUITests";
+			sourceTree = "<group>";
+		};
+		1D32A804246890110077BBA2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1D32A7D4246882CE0077BBA2 /* AppDelegate.swift */,
+				1D32A7D6246882CE0077BBA2 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1D32A8052468902C0077BBA2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1D32A8062468903F0077BBA2 /* UIResources */ = {
+			isa = PBXGroup;
+			children = (
+				1D32A807246890980077BBA2 /* Storyboards */,
+			);
+			path = UIResources;
+			sourceTree = "<group>";
+		};
+		1D32A807246890980077BBA2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1D32A7DF246882D30077BBA2 /* LaunchScreen.storyboard */,
+				1D32A7DA246882CE0077BBA2 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1D32A808246890A80077BBA2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1D32A809246890B80077BBA2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1D32A80A246891920077BBA2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1D32A7D8246882CE0077BBA2 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1D32A80B246891BA0077BBA2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1D32A80C246891DA0077BBA2 /* Animations */,
+				1D32A7DD246882D30077BBA2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1D32A80C246891DA0077BBA2 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				1D32A80D246892A30077BBA2 /* cat.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D32A7D0246882CE0077BBA2 /* Cats by Evens Taian */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D32A7FB246882D40077BBA2 /* Build configuration list for PBXNativeTarget "Cats by Evens Taian" */;
+			buildPhases = (
+				1D32A7CD246882CE0077BBA2 /* Sources */,
+				1D32A7CE246882CE0077BBA2 /* Frameworks */,
+				1D32A7CF246882CE0077BBA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cats by Evens Taian";
+			productName = "Cats by Evens Taian";
+			productReference = 1D32A7D1246882CE0077BBA2 /* Cats by Evens Taian.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1D32A7E6246882D30077BBA2 /* Cats by Evens TaianTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D32A7FE246882D40077BBA2 /* Build configuration list for PBXNativeTarget "Cats by Evens TaianTests" */;
+			buildPhases = (
+				1D32A7E3246882D30077BBA2 /* Sources */,
+				1D32A7E4246882D30077BBA2 /* Frameworks */,
+				1D32A7E5246882D30077BBA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D32A7E9246882D30077BBA2 /* PBXTargetDependency */,
+			);
+			name = "Cats by Evens TaianTests";
+			productName = "Cats by Evens TaianTests";
+			productReference = 1D32A7E7246882D30077BBA2 /* Cats by Evens TaianTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1D32A7F1246882D30077BBA2 /* Cats by Evens TaianUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D32A801246882D40077BBA2 /* Build configuration list for PBXNativeTarget "Cats by Evens TaianUITests" */;
+			buildPhases = (
+				1D32A7EE246882D30077BBA2 /* Sources */,
+				1D32A7EF246882D30077BBA2 /* Frameworks */,
+				1D32A7F0246882D30077BBA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D32A7F4246882D30077BBA2 /* PBXTargetDependency */,
+			);
+			name = "Cats by Evens TaianUITests";
+			productName = "Cats by Evens TaianUITests";
+			productReference = 1D32A7F2246882D30077BBA2 /* Cats by Evens TaianUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D32A7C9246882CE0077BBA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Evens Taian";
+				TargetAttributes = {
+					1D32A7D0246882CE0077BBA2 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					1D32A7E6246882D30077BBA2 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 1D32A7D0246882CE0077BBA2;
+					};
+					1D32A7F1246882D30077BBA2 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 1D32A7D0246882CE0077BBA2;
+					};
+				};
+			};
+			buildConfigurationList = 1D32A7CC246882CE0077BBA2 /* Build configuration list for PBXProject "Cats by Evens Taian" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D32A7C8246882CE0077BBA2;
+			productRefGroup = 1D32A7D2246882CE0077BBA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D32A7D0246882CE0077BBA2 /* Cats by Evens Taian */,
+				1D32A7E6246882D30077BBA2 /* Cats by Evens TaianTests */,
+				1D32A7F1246882D30077BBA2 /* Cats by Evens TaianUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D32A7CF246882CE0077BBA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D32A7E1246882D30077BBA2 /* LaunchScreen.storyboard in Resources */,
+				1D32A7DE246882D30077BBA2 /* Assets.xcassets in Resources */,
+				1D32A7DC246882CE0077BBA2 /* Main.storyboard in Resources */,
+				1D32A80E246892A30077BBA2 /* cat.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D32A7E5246882D30077BBA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D32A7F0246882D30077BBA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D32A7CD246882CE0077BBA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D32A7D9246882CE0077BBA2 /* ViewController.swift in Sources */,
+				1D32A7D5246882CE0077BBA2 /* AppDelegate.swift in Sources */,
+				1D32A7D7246882CE0077BBA2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D32A7E3246882D30077BBA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D32A7EC246882D30077BBA2 /* Cats_by_Evens_TaianTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D32A7EE246882D30077BBA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D32A7F7246882D40077BBA2 /* Cats_by_Evens_TaianUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D32A7E9246882D30077BBA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D32A7D0246882CE0077BBA2 /* Cats by Evens Taian */;
+			targetProxy = 1D32A7E8246882D30077BBA2 /* PBXContainerItemProxy */;
+		};
+		1D32A7F4246882D30077BBA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D32A7D0246882CE0077BBA2 /* Cats by Evens Taian */;
+			targetProxy = 1D32A7F3246882D30077BBA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1D32A7DA246882CE0077BBA2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D32A7DB246882CE0077BBA2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1D32A7DF246882D30077BBA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D32A7E0246882D30077BBA2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D32A7F9246882D40077BBA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D32A7FA246882D40077BBA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D32A7FC246882D40077BBA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NKZKJG4ZLT;
+				INFOPLIST_FILE = "Cats by Evens Taian/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evenstaian.Cats-by-Evens-Taian";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D32A7FD246882D40077BBA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NKZKJG4ZLT;
+				INFOPLIST_FILE = "Cats by Evens Taian/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evenstaian.Cats-by-Evens-Taian";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1D32A7FF246882D40077BBA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NKZKJG4ZLT;
+				INFOPLIST_FILE = "Cats by Evens TaianTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evenstaian.Cats-by-Evens-TaianTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cats by Evens Taian.app/Cats by Evens Taian";
+			};
+			name = Debug;
+		};
+		1D32A800246882D40077BBA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NKZKJG4ZLT;
+				INFOPLIST_FILE = "Cats by Evens TaianTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evenstaian.Cats-by-Evens-TaianTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cats by Evens Taian.app/Cats by Evens Taian";
+			};
+			name = Release;
+		};
+		1D32A802246882D40077BBA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NKZKJG4ZLT;
+				INFOPLIST_FILE = "Cats by Evens TaianUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evenstaian.Cats-by-Evens-TaianUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Cats by Evens Taian";
+			};
+			name = Debug;
+		};
+		1D32A803246882D40077BBA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NKZKJG4ZLT;
+				INFOPLIST_FILE = "Cats by Evens TaianUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evenstaian.Cats-by-Evens-TaianUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Cats by Evens Taian";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D32A7CC246882CE0077BBA2 /* Build configuration list for PBXProject "Cats by Evens Taian" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D32A7F9246882D40077BBA2 /* Debug */,
+				1D32A7FA246882D40077BBA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D32A7FB246882D40077BBA2 /* Build configuration list for PBXNativeTarget "Cats by Evens Taian" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D32A7FC246882D40077BBA2 /* Debug */,
+				1D32A7FD246882D40077BBA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D32A7FE246882D40077BBA2 /* Build configuration list for PBXNativeTarget "Cats by Evens TaianTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D32A7FF246882D40077BBA2 /* Debug */,
+				1D32A800246882D40077BBA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D32A801246882D40077BBA2 /* Build configuration list for PBXNativeTarget "Cats by Evens TaianUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D32A802246882D40077BBA2 /* Debug */,
+				1D32A803246882D40077BBA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D32A7C9246882CE0077BBA2 /* Project object */;
+}
