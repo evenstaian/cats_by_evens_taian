@@ -8,14 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1D32A7D5246882CE0077BBA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D32A7D4246882CE0077BBA2 /* AppDelegate.swift */; };
-		1D32A7D7246882CE0077BBA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D32A7D6246882CE0077BBA2 /* SceneDelegate.swift */; };
-		1D32A7D9246882CE0077BBA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D32A7D8246882CE0077BBA2 /* ViewController.swift */; };
-		1D32A7DC246882CE0077BBA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D32A7DA246882CE0077BBA2 /* Main.storyboard */; };
 		1D32A7DE246882D30077BBA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D32A7DD246882D30077BBA2 /* Assets.xcassets */; };
 		1D32A7E1246882D30077BBA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D32A7DF246882D30077BBA2 /* LaunchScreen.storyboard */; };
 		1D32A7EC246882D30077BBA2 /* Cats_by_Evens_TaianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D32A7EB246882D30077BBA2 /* Cats_by_Evens_TaianTests.swift */; };
 		1D32A7F7246882D40077BBA2 /* Cats_by_Evens_TaianUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D32A7F6246882D40077BBA2 /* Cats_by_Evens_TaianUITests.swift */; };
 		1D32A80E246892A30077BBA2 /* cat.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D32A80D246892A30077BBA2 /* cat.json */; };
+		1D32A810246894A10077BBA2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D32A80F246894A10077BBA2 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +36,6 @@
 /* Begin PBXFileReference section */
 		1D32A7D1246882CE0077BBA2 /* Cats by Evens Taian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cats by Evens Taian.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D32A7D4246882CE0077BBA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1D32A7D6246882CE0077BBA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1D32A7D8246882CE0077BBA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1D32A7DB246882CE0077BBA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D32A7DD246882D30077BBA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D32A7E0246882D30077BBA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D32A7E2246882D30077BBA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +46,7 @@
 		1D32A7F6246882D40077BBA2 /* Cats_by_Evens_TaianUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cats_by_Evens_TaianUITests.swift; sourceTree = "<group>"; };
 		1D32A7F8246882D40077BBA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D32A80D246892A30077BBA2 /* cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cat.json; sourceTree = "<group>"; };
+		1D32A80F246894A10077BBA2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				1D32A7D4246882CE0077BBA2 /* AppDelegate.swift */,
-				1D32A7D6246882CE0077BBA2 /* SceneDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -159,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				1D32A7DF246882D30077BBA2 /* LaunchScreen.storyboard */,
-				1D32A7DA246882CE0077BBA2 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -181,7 +175,7 @@
 		1D32A80A246891920077BBA2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1D32A7D8246882CE0077BBA2 /* ViewController.swift */,
+				1D32A80F246894A10077BBA2 /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -309,7 +303,6 @@
 			files = (
 				1D32A7E1246882D30077BBA2 /* LaunchScreen.storyboard in Resources */,
 				1D32A7DE246882D30077BBA2 /* Assets.xcassets in Resources */,
-				1D32A7DC246882CE0077BBA2 /* Main.storyboard in Resources */,
 				1D32A80E246892A30077BBA2 /* cat.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,9 +328,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D32A7D9246882CE0077BBA2 /* ViewController.swift in Sources */,
 				1D32A7D5246882CE0077BBA2 /* AppDelegate.swift in Sources */,
-				1D32A7D7246882CE0077BBA2 /* SceneDelegate.swift in Sources */,
+				1D32A810246894A10077BBA2 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,14 +365,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1D32A7DA246882CE0077BBA2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1D32A7DB246882CE0077BBA2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1D32A7DF246882D30077BBA2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -510,15 +494,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NKZKJG4ZLT;
+				DEVELOPMENT_TEAM = F5R22Q6K56;
 				INFOPLIST_FILE = "Cats by Evens Taian/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.evenstaian.Cats-by-Evens-Taian";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -528,15 +515,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NKZKJG4ZLT;
+				DEVELOPMENT_TEAM = F5R22Q6K56;
 				INFOPLIST_FILE = "Cats by Evens Taian/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.evenstaian.Cats-by-Evens-Taian";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
