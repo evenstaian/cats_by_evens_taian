@@ -8,6 +8,7 @@ target 'Cats by Evens Taian' do
   # Pods for Cats by Evens Taian
 
 	pod 'lottie-ios'
+  pod 'SDWebImage'
 
   target 'Cats by Evens TaianTests' do
     inherit! :search_paths

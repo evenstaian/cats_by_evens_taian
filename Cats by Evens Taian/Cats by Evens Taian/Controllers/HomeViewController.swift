@@ -11,12 +11,14 @@ import Lottie
 
 class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, ViewCode {
     
-    let dataSource : [String] = ["USA", "Brasil", "Australia", "Mexico"]
+    let dataSource : [String] = ["https://i.imgur.com/27VvbyU.png", "https://i.imgur.com/vTUDMg9.jpg", "https://i.imgur.com/AOUUCg3.jpg", "https://i.imgur.com/AOUUCg3.jpg"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.isHidden = true
         setupViews()
         setupConstraints()
+        loadCats()
     }
     
     fileprivate let animationView = AnimationView(name: "cat")
@@ -55,7 +57,6 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func setupViews(){
         view.addSubview(contentView)
         contentView.addSubview(loaderView)
-        loaderView.isHidden = true
         contentView.addSubview(collectionView)
     }
     
@@ -81,6 +82,19 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         ])
         
     }
+    
+    // MARK: Handles
+    func loadCats(){
+        showLoader(status: true)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.showLoader(status: false)
+        }
+    }
+    
+    func showLoader(status : Bool){
+        loaderView.isHidden = !status
+        collectionView.isHidden = status
+    }
 }
 
 extension HomeViewController {
@@ -96,9 +110,8 @@ extension HomeViewController {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath as IndexPath) as! CatCell
         
-        cell.data = "Teste"
+        cell.data = dataSource[ indexPath.row ]
 
-        cell.backgroundColor = UIColor.green
         return cell
     }
 }
