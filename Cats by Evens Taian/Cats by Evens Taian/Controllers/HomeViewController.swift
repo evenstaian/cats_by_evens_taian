@@ -11,7 +11,7 @@ import Lottie
 
 class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, ViewCode {
     
-    let dataSource : [String] = ["https://i.imgur.com/27VvbyU.png", "https://i.imgur.com/vTUDMg9.jpg", "https://i.imgur.com/AOUUCg3.jpg", "https://i.imgur.com/AOUUCg3.jpg"]
+    var dataSource : [Cat] = [Cat(title: "", images: [CatImage(link: "")])]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,22 +93,28 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
             DispatchQueue.main.async{
                 APIRequests.getCats(){(data) in
                     do{
+                        self.showLoader(status: false)
                         
                         let res = try JSONDecoder().decode(CatModelResponse.self, from: data)
-                        print("RESPOSTA SALDO:", res)
+                        self.dataSource = res.data
+                        
+                        DispatchQueue.main.async{
+                            self.collectionView.reloadData()
+                        }
                         
                     }catch {
                         print(error)
                     }
                 }
             }
-            self.showLoader(status: false)
         }
     }
     
     func showLoader(status : Bool){
-        loaderView.isHidden = !status
-        collectionView.isHidden = status
+        DispatchQueue.main.async{
+            self.loaderView.isHidden = !status
+            self.collectionView.isHidden = status
+        }
     }
 }
 
@@ -125,7 +131,7 @@ extension HomeViewController {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath as IndexPath) as! CatCell
         
-        cell.data = dataSource[ indexPath.row ]
+        cell.cat = dataSource[ indexPath.row ]
 
         return cell
     }

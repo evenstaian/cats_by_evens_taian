@@ -12,11 +12,12 @@ import SDWebImage
 
 class CatCell: UICollectionViewCell {
     
-    var data : String? {
+    var cat : Cat? {
         didSet {
-            guard let data = data else { return }
-            image.sd_setImage(with: URL(string: data))
-            name.text = "Gatinho Sapeca"
+            guard let cat = cat else { return }
+            guard let images : [CatImage] = cat.images else { return }
+                image.sd_setImage(with: URL(string: images[0].link))
+            name.text = cat.title
         }
     }
     
