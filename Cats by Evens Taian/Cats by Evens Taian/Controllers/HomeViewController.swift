@@ -42,9 +42,33 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     lazy var authorView : AuthorSign = {
         let aV = AuthorSign()
         aV.translatesAutoresizingMaskIntoConstraints = false
-        let refreshGesture = UITapGestureRecognizer(target: self, action: #selector(refreshCats))
-        aV.addGestureRecognizer(refreshGesture)
         return aV
+    }()
+    
+    lazy var refreshView : UIView = {
+        let rV = UIView()
+        rV.translatesAutoresizingMaskIntoConstraints = false
+        let refreshGesture = UITapGestureRecognizer(target: self, action: #selector(refreshCats))
+        rV.addGestureRecognizer(refreshGesture)
+        
+        let imageR = UIImageView()
+        imageR.image = UIImage(named: "refresh")
+        imageR.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
+        
+        rV.addSubview(imageR)
+        
+        imageR.topAnchor.constraint(equalTo: rV.topAnchor, constant: 20).isActive = true
+        imageR.bottomAnchor.constraint(equalTo: rV.bottomAnchor).isActive = true
+        imageR.leadingAnchor.constraint(equalTo: rV.leadingAnchor).isActive = true
+        imageR.trailingAnchor.constraint(equalTo: rV.trailingAnchor).isActive = true
+        return rV
+    }()
+    
+    lazy var imageRefresh : UIView = {
+        let imageR = UIImageView()
+        imageR.image = UIImage(named: "refresh")
+        imageR.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
+        return imageR
     }()
     
     lazy var flowLayout : UICollectionViewLayout = {
@@ -70,6 +94,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         contentView.addSubview(loaderView)
         contentView.addSubview(collectionView)
         contentView.addSubview(authorView)
+        contentView.addSubview(refreshView)
     }
     
     func setupConstraints(){
@@ -99,12 +124,17 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
             authorView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
         ])
         
+        NSLayoutConstraint.activate([
+            refreshView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20),
+            refreshView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            refreshView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20)
+        ])
+        
     }
     
     // MARK: Handles
     @objc
     func refreshCats(){
-        print("chamou")
         loadCats()
     }
     
