@@ -18,6 +18,9 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         navigationController?.navigationBar.isHidden = true
         setupViews()
         setupConstraints()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         loadCats()
     }
     
@@ -86,7 +89,19 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     // MARK: Handles
     func loadCats(){
         showLoader(status: true)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            DispatchQueue.main.async{
+                APIRequests.getCats(){(data) in
+                    do{
+                        
+                        let res = try JSONDecoder().decode(CatModelResponse.self, from: data)
+                        print("RESPOSTA SALDO:", res)
+                        
+                    }catch {
+                        print(error)
+                    }
+                }
+            }
             self.showLoader(status: false)
         }
     }

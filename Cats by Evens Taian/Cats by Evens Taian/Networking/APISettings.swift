@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct Constants {
-    static let baseURL = URL(string: "https://api.imgur.com/3/gallery/search/?q=cats&q_type=jpg")!
-    static let authenticationHeaders = ["authorization"]
+class APISettings {
+    struct Constants {
+        static let baseURL = URL(string: "https://api.imgur.com/3/gallery/search/?q=cats&q_type=jpg")
+    }
 }
-
