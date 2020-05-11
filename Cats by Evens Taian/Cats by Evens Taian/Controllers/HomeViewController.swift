@@ -9,7 +9,9 @@
 import UIKit
 import Lottie
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, ViewCode {
+    
+    let dataSource : [String] = ["USA", "Brasil", "Australia", "Mexico"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,9 +34,29 @@ class HomeViewController: UIViewController {
         return lView
     }()
     
+    lazy var flowLayout : UICollectionViewLayout = {
+        let flowLayout = UICollectionViewFlowLayout()
+        let space = 5.0 as CGFloat
+        flowLayout.minimumInteritemSpacing = space
+        flowLayout.minimumLineSpacing = space
+        return flowLayout
+    }()
+    
+    lazy var collectionView : UICollectionView = {
+        let clView = UICollectionView(frame: self.view.bounds, collectionViewLayout: flowLayout)
+        clView.register(CatCell.self, forCellWithReuseIdentifier: "cell")
+        clView.delegate = self
+        clView.dataSource = self
+        clView.translatesAutoresizingMaskIntoConstraints = false
+        clView.backgroundColor = .white
+        return clView
+    }()
+    
     func setupViews(){
         view.addSubview(contentView)
         contentView.addSubview(loaderView)
+        loaderView.isHidden = true
+        contentView.addSubview(collectionView)
     }
     
     func setupConstraints(){
@@ -50,5 +72,33 @@ class HomeViewController: UIViewController {
             loaderView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             loaderView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
         ])
+        
+        NSLayoutConstraint.activate([
+            collectionView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20),
+            collectionView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20),
+            collectionView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
+            collectionView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20)
+        ])
+        
+    }
+}
+
+extension HomeViewController {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: collectionView.frame.width)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return dataSource.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath as IndexPath) as! CatCell
+        
+        cell.data = "Teste"
+
+        cell.backgroundColor = UIColor.green
+        return cell
     }
 }
