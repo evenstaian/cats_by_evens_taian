@@ -39,6 +39,14 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         return lView
     }()
     
+    lazy var authorView : AuthorSign = {
+        let aV = AuthorSign()
+        aV.translatesAutoresizingMaskIntoConstraints = false
+        let refreshGesture = UITapGestureRecognizer(target: self, action: #selector(refreshCats))
+        aV.addGestureRecognizer(refreshGesture)
+        return aV
+    }()
+    
     lazy var flowLayout : UICollectionViewLayout = {
         let flowLayout = UICollectionViewFlowLayout()
         let space = 5.0 as CGFloat
@@ -61,6 +69,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         view.addSubview(contentView)
         contentView.addSubview(loaderView)
         contentView.addSubview(collectionView)
+        contentView.addSubview(authorView)
     }
     
     func setupConstraints(){
@@ -84,9 +93,21 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
             collectionView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20)
         ])
         
+        NSLayoutConstraint.activate([
+            authorView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            authorView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            authorView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
+        ])
+        
     }
     
     // MARK: Handles
+    @objc
+    func refreshCats(){
+        print("chamou")
+        loadCats()
+    }
+    
     func loadCats(){
         showLoader(status: true)
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
